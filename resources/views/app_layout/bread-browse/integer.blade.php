@@ -1,0 +1,1 @@
+<div class="float-right">{{ str_limit( $modelInstance->{$field->apiName}, '80' )}}</div>

@@ -1,0 +1,1 @@
+<a href="{{$field->prefix . $modelInstance->{$field->apiName} }}" target="_blank" class="blue-text">{{$modelInstance->{$field->apiName} }}</a>

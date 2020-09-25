@@ -1,0 +1,12 @@
+para fazer funcionar upload de imagens
+inserir essa linha na configuração de /config/fylisystems.php
+
+'gcs' => [
+    'driver' => 'gcs',
+    'project_id' => 'servidor-principal-daspeweb',
+    'project_name' => '<<nome do projeto>>',
+    'key_file' => '/var/www/<<nome do projeto>>/config/google-cloud.json', // optional: /path/to/service-account.json
+    'bucket' => 'sistemas-daspe',
+    'path_prefix' => env('GOOGLE_CLOUD_STORAGE_PATH_PREFIX', null), // optional: /default/path/to/apply/in/bucket
+    'storage_api_uri' => 'https://storage.cloud.google.com/sistemas-daspe', // see: Public URLs below
+],

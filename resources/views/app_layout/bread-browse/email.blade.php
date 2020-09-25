@@ -1,0 +1,1 @@
+<a target="_blank" href="mailto:{{$modelInstance->{$field->apiName} }}" class="blue-text">{{$modelInstance->{$field->apiName} }}</a>

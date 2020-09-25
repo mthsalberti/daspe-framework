@@ -1,0 +1,1 @@
+<div class="float-right">R$ {{number_format($modelInstance->{$field->apiName}, 2, ',', '.')}}</div>

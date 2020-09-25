@@ -1,0 +1,1 @@
+<a href="#" class="blue-text " data-slug="{{\Daspeweb\Framework\DaspewebHelper::slug()}}" data-field="{{$field->apiName}}" data-id="{{$modelInstance->id}}" onclick="event.preventDefault(); loadMode(this);">ver tudo...</a>

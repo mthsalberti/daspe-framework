@@ -1,0 +1,33 @@
+<?php
+
+namespace App;
+
+use Daspeweb\Framework\Field\DaspewebModel;
+use Daspeweb\Framework\Field\ID;
+use Daspeweb\Framework\Field\Timestamp;
+use Illuminate\Database\Eloquent\Model;
+
+class DummyClass extends Model
+{
+    use DaspewebModel;
+
+    public static function fields(){
+        return collect([
+            ID::make('id')->label('Código'),
+            Timestamp::make('created_at')->label('Criado em')->breakUp()->onBrowseView()->onReadView(),
+            Timestamp::make('updated_at')->label('Alterado em')->onBrowseView()->onReadView(),
+            Timestamp::make('deleted_at')->label('Excluído em'),
+        ]);
+    }
+
+    public static function extraActions()
+    {
+        return [];
+    }
+
+    public static function relatedLists()
+    {
+        return [];
+    }
+
+}
